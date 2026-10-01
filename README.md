@@ -10,6 +10,7 @@
 ![Model](https://img.shields.io/badge/model-VGG16%20%2B%20LSTM-6f42c1)
 ![Accuracy](https://img.shields.io/badge/val%20accuracy-~96%25-2ea44f)
 ![Status](https://img.shields.io/badge/status-learning%20project-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 [How it works](#how-it-works) ·
 [Results](#results) ·
@@ -27,8 +28,10 @@ as **fight** or **no fight**: VGG16 turns each frame into a feature vector, and
 an LSTM reads the sequence of vectors to make the call.
 
 <p align="center">
-<img src="download%20(2).png" width="70%" alt="Sample detection output on a hockey clip">
+<img src="assets/demo.gif" width="88%" alt="Two Hockey Fight clips, one labelled FIGHT and one NO FIGHT, that the VGG16 + LSTM model learns to classify">
 </p>
+
+<p align="center"><sub>Real clips from the Hockey Fight dataset with their ground-truth labels — what the model learns to tell apart. Regenerate with <code>python assets/make_demo_gif.py</code>.</sub></p>
 
 ## How it works
 
@@ -94,3 +97,7 @@ values to disk; later runs reuse the cache and are much faster.
 
 TensorFlow / Keras · VGG16 (transfer learning) · LSTM · OpenCV · NumPy ·
 Matplotlib · Jupyter
+
+## License
+
+Released under the [MIT License](LICENSE).

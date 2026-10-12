@@ -1,0 +1,12 @@
+torch>=2.2
+torchvision>=0.17
+transformers>=4.45
+opencv-python-headless>=4.8
+numpy
+pandas
+scikit-learn
+matplotlib
+tqdm
+imageio-ffmpeg
+pillow
+gradio>=4.0   # app.py only
